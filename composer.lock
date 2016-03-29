@@ -4,9 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "170399abd834b2a0caaf48a32dd4b429",
-    "content-hash": "18981e064c92a7877588e6aef064dcea",
+    "hash": "514f3f478b173f50a9b30c61311996bb",
+    "content-hash": "1c4e14d62b43665555e6b6bc9e46d44a",
     "packages": [
+        {
+            "name": "bestmomo/scafold",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bestmomo/scafold.git",
+                "reference": "ce8fe0cb84c14ae28cf724fff28e42bf6a042391"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bestmomo/scafold/zipball/ce8fe0cb84c14ae28cf724fff28e42bf6a042391",
+                "reference": "ce8fe0cb84c14ae28cf724fff28e42bf6a042391",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bestmomo\\Scafold\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Bestmomo",
+                    "email": "grandheretique@free.fr"
+                }
+            ],
+            "description": "To add scafold to Laravel 5.1",
+            "homepage": "http://github.com/bestmomo/scafold",
+            "time": "2015-09-30 17:35:12"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -3119,8 +3161,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "bestmomo/scafold": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
