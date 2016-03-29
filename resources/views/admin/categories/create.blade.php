@@ -4,7 +4,24 @@
     <div class="container">
         <h3> Nova Categoria</h3>
 
-        {!! Form::open() !!}
+        @if($errors->any())
+            <ul class="alert">
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        @endif
+
+        {!! Form::open(['route'=>'admin.categories.store', 'class'=>'form']) !!}
+
+            <div class="Form-group">
+                {!! Form::label('Name', 'Nome:') !!}
+                {!! Form::text('name', null, ['class'=>'form-control']) !!}
+            </div>
+
+            <div class="Form-group">
+                {!! Form::submit('Criar categoria', ['class'=>'btn btn-primary']) !!}
+            </div>
 
         {!! Form::close() !!}
 
