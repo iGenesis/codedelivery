@@ -151,6 +151,7 @@ return [
 
 
         Bestmomo\Scafold\ScafoldServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
         /*
          * Application Service Providers...

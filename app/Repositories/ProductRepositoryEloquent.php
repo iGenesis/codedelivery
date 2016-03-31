@@ -6,7 +6,6 @@ use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
 use CodeDelivery\Repositories\ProductRepository;
 use CodeDelivery\Models\Product;
-use CodeDelivery\Validators\ProductValidator;;
 
 /**
  * Class ProductRepositoryEloquent
@@ -23,8 +22,6 @@ class ProductRepositoryEloquent extends BaseRepository implements ProductReposit
     {
         return Product::class;
     }
-
-    
 
     /**
      * Boot up the repository, pushing criteria

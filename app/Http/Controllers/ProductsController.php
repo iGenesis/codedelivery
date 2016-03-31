@@ -3,32 +3,32 @@
 namespace CodeDelivery\Http\Controllers;
 
 use CodeDelivery\Http\Requests\AdminCategoryRequest;
-use CodeDelivery\Repositories\CategoryRepository;
+use CodeDelivery\Repositories\ProductRepository;
 use CodeDelivery\Http\Requests;
 
-class CategoriesController extends Controller
+
+class ProductsController extends Controller
 {
     /**
-     * @var CategoryRepository
+     * @var ProductRepository
      */
     private $repository;
 
-    public function __construct(CategoryRepository $repository)
+    public function __construct(ProductRepository $repository)
     {
-
         $this->repository = $repository;
     }
 
     public function index()
     {
-        $categories = $this->repository->paginate();
+        $products = $this->repository->paginate();
 
-        return view('admin.categories.index', compact('categories'));
+        return view('admin.products.index', compact('products'));
     }
 
     public function create()
     {
-        return view('admin.categories.create');
+        return view('admin.products.create');
     }
 
     public function edit($id)
